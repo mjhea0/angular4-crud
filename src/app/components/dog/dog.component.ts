@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { DogService } from '../dog.service';
+import { DogService } from '../../services/dog.service';
 
+// component meta data
 @Component({
   selector: 'app-dog',
   templateUrl: './dog.component.html',
   styleUrls: ['./dog.component.css']
 })
+
+// component class
 export class DogComponent implements OnInit {
 
-  dogs: any;
+  dogs: {}; // why "any"? lazy
 
+  // inject data service dependency
   constructor(private dogService: DogService) { }
 
   ngOnInit() {
@@ -17,6 +21,7 @@ export class DogComponent implements OnInit {
   }
 
   getDogList() {
+    // resolve the promise
     this.dogService.getAllDogs().then((res) => {
       console.log(res)
       this.dogs = res;

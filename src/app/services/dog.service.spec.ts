@@ -11,6 +11,5 @@ describe('DogService', () => {
 
   it('should be created', inject([DogService], (service: DogService) => {
     expect(service).toBeTruthy();
-    this.
   }));
 });

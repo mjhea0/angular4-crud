@@ -1,7 +1,10 @@
+@import url("http://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower%7COpen+Sans");
+
 body {
   color: #333;
   background-color: #eee;
-  font-family: “Open Sans”;
+  font-family: "Open Sans";
 }
 
 input, label {
@@ -33,7 +36,7 @@ header {
 header h1 {
   font-size: 2rem;
   color: #fff;
-  font-family: “Indie Flower”;
+  font-family: "Indie Flower";
 }
 
 main {

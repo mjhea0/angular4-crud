@@ -1,0 +1,14 @@
+<ul class="dogs">
+  <li *ngFor="let dog of dogs" class="dogs">
+    <section class="dog-listing">
+      <h3 class="name">{{dog.name}}</h3>
+      <section>
+        <figure>
+          <img src="{{dog.imageUrl}}" alt="{{dog.name}}" />
+          <figcaption>{{dog.imageCaption}}</figcaption>
+        </figure>
+        <p>{{dog.description}}</p>
+      </section>
+    </section>
+  </li>
+</ul>

@@ -2,30 +2,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { DogService } from './dog.service';
-import { DogComponent } from './dog/dog.component';
-import { DogDetailComponent } from './dog-detail/dog-detail.component';
+import { DogService } from './services/dog.service';
+import { DogComponent } from './components/dog/dog.component';
 
-const ROUTES = [
-  { path: 'dogs', component: DogComponent },
-  { path: 'dogs-detail/:id', component: DogDetailComponent },
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'dogs', pathMatch: 'full' },
+  { path: 'dogs', component: DogComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    DogComponent,
-    DogDetailComponent
+    DogComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     DogService,
