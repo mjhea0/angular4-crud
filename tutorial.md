@@ -4,14 +4,14 @@ Just the "C" in CRUD...
 
 ## User Story
 
-1. `As a lonely dog, I want to see a list of all of the dogs that are available so that I can see my dating options.`
+`As a lonely dog, I want to see a list of all of the dogs that are available so that I can see my dating options.`
 
 ## Angular 4?
 
 1. Version History:
-  - Angular JS (or Angular 1.x)
-  - Angular 2 (complete re-write for components)
-  - Angular 4 (backwards compatible with Angular 2)
+    - Angular JS (or Angular 1.x)
+    - Angular 2 (complete re-write for components)
+    - Angular 4 (backwards compatible with Angular 2)
 1. TypeScript: static types, developed by Microsoft, [superset](https://en.wikipedia.org/wiki/Superset) of JS
 1. Building blocks: components, services, directives, events
 1. Framework: Bigger, more bloated than React or Vue
