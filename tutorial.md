@@ -43,7 +43,7 @@ $ ng serve
 
 `As a lonely dog, I want to see a list of all of the dogs that are available so that I can see my dating options.`
 
-### Define Service
+### Define a Service
 
 Services are used to encapsulate common functionality for reuse across components. Perfect for storing AJAX requests. *Skinny components, fat services!*
 
@@ -111,7 +111,7 @@ export class DogService {
 
 Here, we defined a class called `DogService`, which takes the `Http` module, and then we created a method called `getAllDogs`, which makes an AJAX request to the Node app and returns an [observeable](https://medium.com/google-developer-experts/angular-introduction-to-reactive-extensions-rxjs-a86a7430a61f) sequence. The `@Injectable()` decorator turns this class into a dependency that we can inject into a component...
 
-### Create Component
+### Create a Component
 
 Create a new component:
 
