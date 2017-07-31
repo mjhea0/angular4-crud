@@ -1,6 +1,6 @@
 # Angular4Crud Tutorial
 
-Just the "C" in CRUD...
+Just the "R" in CRUD...
 
 ## User Story
 
